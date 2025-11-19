@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Elite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/main.jpg" alt="Burger">
+            <h1>Satisfy your hunger in a flash!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#main1">Deals</a></li>
+            <li><a href="#main2">New Arrivals</a></li>
+            <li><a href="#main3">Zingers</a></li>
+            <li><a href="#main4">Wraps</a></li>
+            <li><a href="#main5">Others</a></li>
+        </ul>
+    </nav>
+    <section id="main1"><h1>DEALS</h1></section>
+    <div id="deals">
+    <section>
+         <img src="images/deal1.jpg" alt="Lacha Paratha Deal">
+        <h2>Lacha Paratha Deal</h2>
+        <h5>1 Beef & 1 Chicken Lacha Paratha Burger & 2 Drink</h5>
+        <h3>Rs.990</h3>
+        <button onclick="addToCart('Lacha Paratha Deal',990);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/deal2.jpg" alt="StripZilla">
+        <h2>StripZilla</h2>
+        <h5>A soft, cornmeal-dusted bun stuffed with two crispy, crunchy chicken strips and a golden-fried chicken tender</h5>
+        <h3>Rs.390</h3>
+        <button onclick="addToCart('StripZilla',390);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/deal3.jpg" alt="3 Pc Crispy Chicken">
+        <h2>3 Pc Crispy Chicken</h2>
+        <h5>3 pc chicken(Selecting Chicken part is not Applicable on promotion Set)</h5>
+        <h3>Rs.690</h3>
+        <button onclick="addToCart('3 Pc Crispy Chicken',690);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/deal4.jpg" alt="SUMMER DEAL 1">
+        <h2>SUMMER DEAL 1</h2>
+        <h5>Chick N Crunch, Crispy Chicken Pc & Regular Drink [Can/345ml Drink]</h5>
+        <h3>Rs.620</h3>
+        <button onclick="addToCart('SUMMER DEAL 1',620);notification();">ADD</button>
+    </section>
+    </div>
+    <section id="main2"><h1>NEW ARRIVALS</h1></section>
+    <div id="newarrivals">
+    <section>
+         <img src="images/newarrival1.jpg" alt="Lacha Paratha Deal">
+        <h3>Lacha Paratha Deal</h3>
+        <h5>1 Beef Lacha Paratha Burger, 1 Chicken Lacha Paratha Burger & 2 Soft Drinks</h5>
+        <h4>Rs.990</h4>
+        <button onclick="addToCart('Lacha Paratha Deal',990);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/newarrival2.jpg" alt="Beef Smash Lacha Paratha">
+        <h3>Beef Smash Lacha Paratha</h3>
+        <h5>We bring you our Original Smash Lacha Paratha Burger stuffed with a juicy beef patty</h5>
+        <h4>Rs.750</h4>
+        <button onclick="addToCart('Beef Smash Lacha Paratha',750);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/newarrival3.jpg" alt="Beef Chapli Melt Lacha Paratha">
+        <h3>Beef Chapli Melt Lacha Paratha</h3>
+        <h5>We bring you our Spicy Beef Chapli Lacha Paratha</h5>
+        <h4>Rs.750</h4>
+        <button onclick="addToCart('Beef Chapli Melt Lacha Paratha',750);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/newarrival4.jpg" alt="Saucy Chatkara Lacha Paratha">
+        <h3>Saucy Chatkara Lacha Paratha</h3>
+        <h5>Keeping that spirit alive, we bring you our Saucy Chatkara Lacha Paratha</h5>
+        <h4>Rs.690</h4>
+        <button onclick="addToCart('Saucy Chatkara Lacha Paratha',690);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/newarrival5.jpg" alt="Signature Golden Crunch Lacha Paratha">
+        <h3>Signature Golden Crunch Lacha Paratha</h3>
+        <h5>We bring crispy lacha paratha stuffed with a crispy chicken patty, and creamy mayo.</h5>
+        <h4>Rs.690</h4>
+        <button onclick="addToCart('Signature Golden Lacha Paratha',690);notification();">ADD</button>
+    </section>
+    </div>
+    <section id="main3"><h1>ZINGERS</h1></section>
+    <div id="burgers">
+    <section>
+        <img src="images/burger1.jpg" alt="Siracha Burger">
+        <h2>Siracha Burger</h2>
+        <h5>Known for its bold, spicy flavors! Crispy, juicy scrumptious chicken patty</h5>
+        <h3>Rs.650</h3>
+        <button onclick="addToCart('Siracha Burger',650);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/burger2.jpg" alt="Zinger Burger">
+        <h2>Zinger Burger</h2>
+        <h5>Crispy goodness, ,made of chest chicken meat. Along with Al Baik Sauce.</h5>
+        <h3>Rs.310</h3>
+        <button onclick="addToCart('Zinger Burger',310);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/burger3.jpg" alt="THE MAJESTY">
+        <h2>THE MAJESTY</h2>
+        <h5>Double crispy chicken patty with double goodness, along with a tinge of spicy goodness stuffed in a a burger.</h5>
+        <h3>Rs.770</h3>
+        <button onclick="addToCart('THE MAJESTY',770);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/burger4.jpg" alt="Spicy Zenga Burger">
+        <h2>Spicy Zenga Burger</h2>
+        <h5>Crispy goodness, ,made of thigh chicken meat making it more juicy. Along with Al Baik Sauce.</h5>
+        <h3>Rs.600</h3>
+        <button onclick="addToCart('Spicy Zenga Burger',600);notification();">ADD</button>
+    </section>
+    </div>
+    <section id="main4"><h1>WRAPS</h1></section>
+    <div id="wraps">
+    <section>
+         <img src="images/wrap1.jpg" alt="Dynamite Wrap">
+        <h3>Dynamite Wrap</h3>
+        <h5>Crispy chicken tenders wrapped in a soft, warm tortilla, signature dynamite sauce and crunchy iceberg lettuce. </h5>
+        <h4>Rs.799</h4>
+        <button onclick="addToCart('Dynamite Wrap',799);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/wrap2.jpg" alt="Peri Peri Wrap">
+        <h3>Peri Peri Wrap</h3>
+        <h5>Crispy chicken tenders wrapped in a soft, warm tortilla, peri peri sauce and crunchy iceberg lettuce.</h5>
+        <h4>Rs.799</h4>
+        <button onclick="addToCart('Peri Peri Wrap',799);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/wrap3.jpg" alt="Creamy Wrap">
+        <h3>Creamy Wrap</h3>
+        <h5>Crispy chicken tenders wrapped in a soft, warm tortilla, with juicy tomato and crunchy iceberg lettuce.</h5>
+        <h4>Rs.799</h4>
+        <button onclick="addToCart('Creamy Wrap',799);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/wrap4.jpg" alt="Fiery Wrap">
+        <h3>Fiery Wrap</h3>
+        <h5>Crispy chicken tenders wrapped in a soft, warm tortilla, jalapenos, blend of zesty sauce and crunchy iceberg lettuce.</h5>
+        <h4>Rs.799</h4>
+        <button onclick="addToCart('Fiery Wrap',799);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/wrap5.jpg" alt="Smoky Wrap">
+        <h3>Smoky Wrap</h3>
+        <h5>Crispy chicken tenders wrapped in a soft, warm tortilla, sautéed onions, chicken pepperoni, hickory smoky BBQ sauce and crunchy iceberg lettuce.</h5>
+        <h4>Rs.799</h4>
+        <button onclick="addToCart('Smoky Wrap',799);notification();">ADD</button>
+    </section>
+    </div>
+    <section id="main5"><h1>OTHERS</h1></section>
+    <div id="others">
+    <section>
+         <img src="images/others1.jpg" alt="Pita Pizza Wrap">
+        <h3>Pita Pizza Wrap</h3>
+        <h5>Pita Pizza Wrap</h5>
+        <h4>Rs.550</h4>
+        <button onclick="addToCart('Pita Pizza Wrap',550);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/others2.jpg" alt="Crispy Chicken Sandwich With Fries">
+        <h3>Crispy Chicken Sandwich With Fries</h3>
+        <h5>Sandwich a perfectly seasoned and golden fried chicken</h5>
+        <h4>Rs.799</h4>
+        <button onclick="addToCart('Crispy Chicken Sandwich + Fries',799);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/others3.jpg" alt="Chicken Broast With Bun & Fries">
+        <h3>Chicken Broast With Bun & Fries</h3>
+        <h5>Crispy Chicken outer layer with juicy chicken along with bun and French fries.</h5>
+        <h4>Rs.650</h4>
+        <button onclick="addToCart('Chicken Broast With Bun & Fries',650);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/others4.jpg" alt="Alfredo Pasta">
+        <h3>Alfredo Pasta</h3>
+        <h5>Seasoned, sautéed boneless chicken bits and fettuccine bathed in savory garlic and parmesan Alfred sauce.</h5>
+        <h4>Rs.850</h4>
+        <button onclick="addToCart('Alfredo Pasta',850);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/others5.jpg" alt="Chicken Chowmein">
+        <h3>Chicken Chowmein</h3>
+        <h5>Our hand made stir fried noodles with chunks of chicken, vegetables seasoned with soya sauce & other flavorful sauces</h5>
+        <h4>Rs.999</h4>
+        <button onclick="addToCart('Chicken Chowmein',999);notification();">ADD</button>
+    </section>
+    <section>
+        <img src="images/others6.jpg" alt="Fish & Chips">
+        <h3>Fish & Chips</h3>
+        <h5>2 Pcs of Crispy deep fried fish biscuits</h5>
+        <h4>Rs.750</h4>
+        <button onclick="addToCart('Fish & Chips',750);notification();">ADD</button>
+    </section>
+    </div>
+    <section id="notification">Item added to cart ✔</section>
+    <div id="overlay" onclick="closecart();closeorder();closeend();"></div>
+    <button onclick="opencart()" id="viewcart">View Cart</button>
+    <div id="cart">
+        <h1>Your Cart🛒</h1>
+    <button onclick="closecart()" id="cartcross">x</button>
+    <div id="cartItems"></div>
+    <button onclick="openorder()" id="checkout">Check Out</button>
+    </div>
+    <div id="order">
+        <h1>Checkout</h1>
+        <h5>This is a Delivery Order🏍<br>Just a last step, please enter your details:</h5>
+        <form>
+                <label for="name">Full Name</label>            
+                <input type="text" id="name" name="fullname"required>
+                <label for="adress">Adress</label>
+                <input type="text"id="adress"name="adress"required>
+                <label for="number">Mobile Number</label>
+                <input type="text"id="number"name="mobile"required>
+                <button type="submit" id="place">Place Order</button>     
+        </form>
+    <h1>Your Order</h1>
+    <div id="orderedItems"></div>
+    </div>
+    <div id="end">
+        <h1>Thank you!</h1>
+        <h2>Order has been placed</h2>
+        <h3>Your order will be dilivered in 30-45 minutes</h3>
+        <h4>For any query you can contact us on +92-123-456-78</h4>
+    </div> 
+    <script src="java.js"></script>
+</body>
+</html>
