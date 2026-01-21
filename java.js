@@ -51,7 +51,7 @@ let cart = [];
 function addToCart(name, price) {
     let existingItem = cart.find(item => item.name === name);
     if (existingItem) {
-        existingItem.qty += 1; // Increase quantity
+        existingItem.qty += 1; 
     } else {
         cart.push({ name: name, price: price, qty: 1 });
     }
@@ -68,7 +68,6 @@ function showCart() {
     cartDiv.innerHTML = "";
 
     if (cart.length === 0) {
-        cartDiv.innerHTML = "<p>Your cart is empty</p>";
         closeViewCart();
         closecart();
         return;
@@ -77,8 +76,9 @@ function showCart() {
         let item = cart[i];
         let div = document.createElement("div");
         div.innerHTML =`
-        <span id="items">${item.name}</span> <span id="price">Rs.${item.price * item.qty}  x${item.qty}</span>
+        <span id="items">${item.name}</span> <span id="price">Rs.${item.price}</span>
         <button id="remove" onclick="removeFromCart(${i})">➖</button>
+        <button id="qnty">${item.qty}</button>
         <button id="add" onclick="addToCart('${item.name}', ${item.price})">➕</button>`;
         cartDiv.appendChild(div);
     }
@@ -97,7 +97,7 @@ function showOrder() {
         let item = cart[i];
         let div = document.createElement("div");
         div.innerHTML =`
-        <span id="items">${item.name} - Rs.${item.price}</span>`
+        <span id="items">${item.qty} x ${item.name}  - Rs.${item.price}</span>`
         orderDiv.appendChild(div);
     }
     let total = 0;
